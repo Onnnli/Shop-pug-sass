@@ -1,0 +1,52 @@
+html
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title The loop
+        link(href='https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap' rel='stylesheet')
+        link(rel="stylesheet", href="./css/main.css")
+    body
+        header.head
+            .container
+                .navWrapper
+                    nav.navContent
+                        ul.navList
+                            li
+                                a.navLink(href="#") Для мужчин
+                            li
+                                a.navLink(href="#") Для женщин
+                            li
+                                a.navLink(href="#") Для детей
+                            li
+                                a.navLogo(href="#")
+                                    img(src="img/logo.png", alt="logoty[pe")    
+                            li
+                                a.navDelivery(href="#") Оплата
+                            li
+                                a.navPay(href="#") Доставка
+                        .basket
+                            .basketLogo
+                                img(src="img/basketLogo.svg", alt="basket")
+                            .basketItem
+                                img(src="img/item.svg", alt="itembasket")
+                .sliderWrapper
+                    .slider
+                        .slide.slideOne
+                            .slideContent
+                                .slideText
+                                    h3.slideName Зимняя распродажа
+                                    h1.slideTitle СКИДКИ ДО 90%
+                                    a.slideButton СМОТРЕТЬ МОДЕЛИ
+                                .slideImg
+                                    h4.noCost 9 900 ₽
+                                    h2.cost 1 900 ₽ 
+                    .paginationWrapper
+                        a.pagination
+                        a.pagination.active
+                        a.pagination
+                        a.pagination
+        
+        section.delivery   
+            h2.titleSection БЕСПЛАТНАЯ ДОСТАВКА 
+                span ОТ 3000₽
+            p.discribeSection Сделайте заказ и получите подарок!
