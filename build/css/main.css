@@ -4,112 +4,81 @@
   .head .container .navWrapper {
     padding-top: 60px;
     margin-bottom: 126px; }
-    .head .container .navWrapper nav.navContent {
-      display: flex;
-      justify-content: space-between;
-      align-items: center; }
-      .head .container .navWrapper nav.navContent .navList {
-        display: flex;
-        width: 80%;
-        justify-content: space-between;
-        align-items: center; }
-        .head .container .navWrapper nav.navContent .navList li {
-          display: block;
-          list-style: none; }
-          .head .container .navWrapper nav.navContent .navList li a {
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 14px;
-            line-height: 17px;
-            letter-spacing: 0.03em;
-            color: #212121; }
-          .head .container .navWrapper nav.navContent .navList li .navLink {
-            margin-right: 5px; }
-            .head .container .navWrapper nav.navContent .navList li .navLink::after {
-              content: '';
-              position: relative;
-              border: 5px solid transparent;
-              border-top: 5px solid #212121;
-              top: 12px;
-              left: 5px; }
-      .head .container .navWrapper nav.navContent .basket {
-        display: flex;
-        align-items: center; }
-        .head .container .navWrapper nav.navContent .basket .basketLogo {
-          margin-right: 15px; }
-        .head .container .navWrapper nav.navContent .basket .basketItem {
-          margin-top: 10px; }
+    .head .container .navWrapper .bgc {
+      background-color: #F9F6F1;
+      padding: 0;
+      width: 100%; }
+      .head .container .navWrapper .bgc .nav-item {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.03em;
+        color: #212121;
+        padding: 0; }
+        .head .container .navWrapper .bgc .nav-item a {
+          color: #000;
+          padding: 0; }
+        .head .container .navWrapper .bgc .nav-item:nth-last-child(5) {
+          margin-right: 100px; }
+      .head .container .navWrapper .bgc .basket {
+        display: flex; }
   .head .container .sliderWrapper {
     justify-content: center; }
-    .head .container .sliderWrapper .slider {
-      margin-bottom: 130px; }
-      .head .container .sliderWrapper .slider .slide {
-        display: flex; }
-        .head .container .sliderWrapper .slider .slide .slideContent {
-          display: flex;
-          width: 100%; }
-          .head .container .sliderWrapper .slider .slide .slideContent .slideText .slideName {
-            font-weight: normal;
-            font-size: 30px;
-            line-height: 37px;
-            letter-spacing: 0.02em;
-            color: #000000;
-            margin-bottom: 35px; }
-          .head .container .sliderWrapper .slider .slide .slideContent .slideText .slideTitle {
-            font-weight: bold;
-            font-size: 55px;
-            line-height: 67px;
-            letter-spacing: 0.04em;
-            color: #000000;
-            margin-bottom: 55px; }
-          .head .container .sliderWrapper .slider .slide .slideContent .slideText .slideButton {
-            font-size: 16px;
-            line-height: 20px;
-            letter-spacing: 0.03em;
-            color: #FFFFFF;
-            background-color: #D7B399;
-            width: 240px;
-            height: 55px;
-            text-align: center;
-            display: block;
-            padding: 17px 0; }
-          .head .container .sliderWrapper .slider .slide .slideContent .slideImg {
-            background-image: url(../img/shoes.png);
-            background-repeat: no-repeat;
-            background-position: left bottom;
-            flex-basis: 50%;
-            min-height: 377px; }
-            .head .container .sliderWrapper .slider .slide .slideContent .slideImg .noCost {
-              text-align: right;
-              font-weight: bold;
-              font-size: 24px;
-              line-height: 29px;
-              text-align: right;
-              letter-spacing: 0.05em;
-              text-decoration-line: line-through;
-              text-transform: uppercase;
-              color: #000000; }
-            .head .container .sliderWrapper .slider .slide .slideContent .slideImg .cost {
-              text-align: right;
-              font-weight: bold;
-              font-size: 42px;
-              line-height: 51px;
-              text-align: right;
-              letter-spacing: 0.02em;
-              text-transform: uppercase;
-              color: #D84033; }
-    .head .container .sliderWrapper .paginationWrapper {
-      display: flex;
-      align-items: center;
-      justify-content: center; }
-      .head .container .sliderWrapper .paginationWrapper .pagination {
-        width: 40px;
+    .head .container .sliderWrapper .indicator {
+      bottom: -50px;
+      padding: 0;
+      background-color: transparent; }
+      .head .container .sliderWrapper .indicator li {
         height: 7px;
-        background-color: #CECECE;
-        margin: 0 7px;
-        display: block; }
-        .head .container .sliderWrapper .paginationWrapper .pagination:active {
+        width: 40px;
+        background-color: #CECECE; }
+        .head .container .sliderWrapper .indicator li.active {
           background-color: #D7B399; }
+    .head .container .sliderWrapper .slideText .slideName {
+      font-weight: normal;
+      font-size: 30px;
+      line-height: 37px;
+      letter-spacing: 0.02em;
+      color: #000000; }
+    .head .container .sliderWrapper .slideText .slideTitle {
+      font-weight: bold;
+      font-size: 54px;
+      line-height: 67px;
+      letter-spacing: 0.04em;
+      color: #000000; }
+    .head .container .sliderWrapper .slideText .slideButton {
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 0.03em;
+      color: #FFFFFF;
+      background-color: #D7B399;
+      width: 240px;
+      height: 55px;
+      text-align: center;
+      display: block; }
+    .head .container .sliderWrapper .slideImg {
+      background-image: url(../img/shoes.png);
+      background-repeat: no-repeat;
+      background-position: left bottom;
+      flex-basis: 50%;
+      min-height: 377px; }
+      .head .container .sliderWrapper .slideImg .noCost {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 29px;
+        text-align: right;
+        letter-spacing: 0.05em;
+        text-decoration-line: line-through;
+        text-transform: uppercase;
+        color: #000000; }
+      .head .container .sliderWrapper .slideImg .cost {
+        font-weight: bold;
+        font-size: 42px;
+        line-height: 51px;
+        text-align: right;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        color: #D84033; }
 
 .delivery {
   background-color: #212121;
@@ -121,7 +90,8 @@
     font-size: 30px;
     line-height: 37px;
     letter-spacing: 0.02em;
-    color: #FFFFFF; }
+    color: #FFFFFF;
+    margin-bottom: 23px; }
     .delivery .titleSection span {
       font-weight: normal; }
   .delivery .discribeSection {

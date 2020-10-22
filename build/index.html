@@ -4,6 +4,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>The loop</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"/>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="./css/main.css"/>
   </head>
@@ -11,37 +12,86 @@
     <header class="head">
       <div class="container">
         <div class="navWrapper">
-          <nav class="navContent">
-            <ul class="navList">
-              <li><a class="navLink" href="#">Для мужчин</a></li>
-              <li><a class="navLink" href="#">Для женщин</a></li>
-              <li><a class="navLink" href="#">Для детей</a></li>
-              <li><a class="navLogo" href="#"><img src="img/logo.png" alt="logoty[pe"/></a></li>
-              <li><a class="navDelivery" href="#">Оплата</a></li>
-              <li><a class="navPay" href="#">Доставка</a></li>
-            </ul>
-            <div class="basket">
-              <div class="basketLogo"><img src="img/basketLogo.svg" alt="basket"/></div>
-              <div class="basketItem"><img src="img/item.svg" alt="itembasket"/></div>
+          <nav class="navbar navbar-expand-lg navbar-light bg-light bgc">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav justify-content-between align-items-center bgc">
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Для мужчин</a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Для женщин</a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Для детей</a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li><a class="navbar-brand" href="#"> <img src="img/logo.png" alt="logotype"/></a>
+                <li class="nav-item"><a class="nav-link" href="#">Оплата</a></li>
+                <li class="nav-item mr-3"><a class="nav-link" href="#">Доставка</a></li>
+                <div class="basket ml-5">
+                  <li class="nav-item mr-1"><a class="nav-link" href="#"> <img src="img/basketLogo.svg" alt="basket"/></a></li>
+                  <li class="nav-item mt-2"><a class="nav-link" href="#"><img src="img/item.svg" alt="itembasket"/></a></li>
+                </div>
+              </ul>
             </div>
           </nav>
         </div>
-        <div class="sliderWrapper">
-          <div class="slider">
-            <div class="slide slideOne">
-              <div class="slideContent">
+        <div class="sliderWrapper justify-content-center">
+          <div class="carousel slide" id="carouselExampleIndicators" data-ride="carousel">
+            <ol class="carousel-indicators indicator">
+              <li class="active" data-target="#carouselExampleIndicators" data-slide-to="0"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active d-flex">
                 <div class="slideText">
-                  <h3 class="slideName">Зимняя распродажа</h3>
-                  <h1 class="slideTitle">СКИДКИ ДО 90%</h1><a class="slideButton">СМОТРЕТЬ МОДЕЛИ</a>
+                  <h3 class="slideName mb-3">Зимняя распродажа</h3>
+                  <h1 class="slideTitle mb-5">СКИДКИ ДО 90%</h1><a class="slideButton py-4">СМОТРЕТЬ МОДЕЛИ</a>
                 </div>
                 <div class="slideImg">
-                  <h4 class="noCost">9 900 ₽</h4>
-                  <h2 class="cost">1 900 ₽ </h2>
+                  <h4 class="noCost text-right">9 900 ₽</h4>
+                  <h2 class="cost text-right">1 900 ₽</h2><img src="img/shoes.png" alt="sale"/>
+                </div>
+              </div>
+              <div class="carousel-item d-flex">
+                <div class="slideText">
+                  <h3 class="slideName mb-3">Зимняя распродажа</h3>
+                  <h1 class="slideTitle mb-5">СКИДКИ ДО 90%</h1><a class="slideButton py-4">СМОТРЕТЬ МОДЕЛИ</a>
+                </div>
+                <div class="slideImg">
+                  <h4 class="noCost text-right">9 900 ₽</h4>
+                  <h2 class="cost text-right">1 900 ₽</h2><img src="img/shoes.png" alt="sale"/>
+                </div>
+              </div>
+              <div class="carousel-item d-flex">
+                <div class="slideText">
+                  <h3 class="slideName mb-3">Зимняя распродажа</h3>
+                  <h1 class="slideTitle mb-5">СКИДКИ ДО 90%</h1><a class="slideButton py-4">СМОТРЕТЬ МОДЕЛИ</a>
+                </div>
+                <div class="slideImg">
+                  <h4 class="noCost text-right">9 900 ₽</h4>
+                  <h2 class="cost text-right">1 900 ₽</h2><img src="img/shoes.png" alt="sale"/>
+                </div>
+              </div>
+              <div class="carousel-item d-flex">
+                <div class="slideText">
+                  <h3 class="slideName mb-3">Зимняя распродажа</h3>
+                  <h1 class="slideTitle mb-5">СКИДКИ ДО 90%</h1><a class="slideButton py-4">СМОТРЕТЬ МОДЕЛИ</a>
+                </div>
+                <div class="slideImg">
+                  <h4 class="noCost text-right">9 900 ₽</h4>
+                  <h2 class="cost text-right">1 900 ₽</h2><img src="img/shoes.png" alt="sale"/>
                 </div>
               </div>
             </div>
           </div>
-          <div class="paginationWrapper"><a class="pagination"></a><a class="pagination active"></a><a class="pagination"></a><a class="pagination"></a></div>
         </div>
       </div>
     </header>
@@ -49,5 +99,8 @@
       <h2 class="titleSection">БЕСПЛАТНАЯ ДОСТАВКА <span>ОТ 3000₽</span></h2>
       <p class="discribeSection">Сделайте заказ и получите подарок!</p>
     </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
   </body>
 </html>
