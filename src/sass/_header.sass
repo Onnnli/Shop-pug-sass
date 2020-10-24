@@ -19,8 +19,7 @@
                     a
                         color: #000
                         padding: 0
-                    &:nth-last-child(5)
-                        margin-right: 100px
+            
                 .basket
                     display: flex
                       
@@ -59,11 +58,8 @@
                     height: 55px
                     text-align: center
                     display: block
+                    cursor: pointer
             .slideImg
-                background-image: url(../img/shoes.png)
-                background-repeat: no-repeat
-                background-position: left bottom
-                flex-basis: 50%
                 min-height: 377px
                 .noCost
                     font-weight: bold
@@ -82,6 +78,85 @@
                     letter-spacing: 0.02em
                     text-transform: uppercase
                     color: #D84033
+
+
+@media screen and ( max-width: 992px) 
+    header.head
+        .container
+            .navWrapper
+                padding-top: 20px
+                nav.navbar
+                    #navbarSupportedContent.collapse.navbar-collapse
+                        ul.bgc
+                            li.nav-item
+                                text-align: center
+                                padding: 10px 0
+                                margin: 0
+                                margin-right: -8px!important
+
+                            a.navbar-brand
+                                align-items: center
+                                margin: 0
+                                padding: 10px 0
+                                img
+                                    display: block
+                                    margin: 0 auto
+
+                            .basket
+                                display: none!important
+
+
+
+@media screen and (max-width: 768px)
+    header.head
+        .container
+            .sliderWrapper.justify-content-center
+                    #carouselExampleIndicators.carousel.slide
+                        .carousel-inner
+                            .carousel-item
+                                flex-direction: column
+                                .slideText
+                                    order: 2
+                                    a.slideButton
+                                        margin: auto
+                                .slideImg
+                                    //display: flex
+                                    min-height: 300px
+                                    order: 1
+                                    img
+                                        z-index: 1
+                                        margin-top: -150px
+                                        width: 70%!important
+@media screen and (max-width: 576px)
+    header.head
+        .container
+            .sliderWrapper.justify-content-center
+                    #carouselExampleIndicators.carousel.slide
+                        .carousel-inner
+                            .carousel-item
+                        
+                                .slideText
+                                  
+                                    .slideName
+                                        font-size: 25px
+                                    .slideTitle 
+                                        font-size: 35px
+                                        margin-bottom: 10px!important
+
+
+                                .slideImg
+                                    min-height: 200px
+                                    h4.noCost
+                                        font-size: 14px
+                                    h2.cost
+                                        font-size: 26px
+                                    img
+                                        margin-top: -115px
+
+
+
+
+
 
 
 

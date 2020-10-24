@@ -9,9 +9,10 @@ $color: #D7B399;
             margin-bottom: 103px
         .wrapper-mod
             .card-wrapper
-            .my-bord
                 border: 3px solid $color
                 .card
+                    border: none!important
+                    cursor: pointer
                     .card-body
                         .color
                             color: $color!important
@@ -20,3 +21,18 @@ $color: #D7B399;
             color: #ffffff
             border: none!important
             margin-top: 121px
+
+
+@media screen and ( max-width: 992px) 
+    section.models
+            .container
+                .wrapper-mod
+                   display: flex
+                   flex-wrap: wrap!important
+                   justify-content: center
+                   .card-wrapper
+                        margin-bottom: 10px!important
+                        a 
+                            width: 300px
+
+                    

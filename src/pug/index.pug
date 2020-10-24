@@ -11,40 +11,40 @@ html
             .container
                 .navWrapper
                    nav.navbar.navbar-expand-lg.navbar-light.bg-light.bgc
-                        button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+                        button.navbar-toggler.bgc(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
                             span.navbar-toggler-icon
                         #navbarSupportedContent.collapse.navbar-collapse
-                            ul.navbar-nav.justify-content-between.align-items-center.bgc
-                                li.nav-item.dropdown
+                            ul.navbar-nav.bgc.d-flex.align-items-center
+                                li.nav-item.dropdown.col.mr-4
                                     a#navbarDropdown.nav-link.dropdown-toggle(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false') Для мужчин
                                     .dropdown-menu(aria-labelledby='navbarDropdown')
                                         a.dropdown-item(href='#') Action
                                         a.dropdown-item(href='#') Another action
                                         .dropdown-divider
                                         a.dropdown-item(href='#') Something else here
-                                li.nav-item.dropdown
+                                li.nav-item.dropdown.col.mr-4
                                     a#navbarDropdown.nav-link.dropdown-toggle(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false') Для женщин
                                     .dropdown-menu(aria-labelledby='navbarDropdown')
                                         a.dropdown-item(href='#') Action
                                         a.dropdown-item(href='#') Another action
                                         .dropdown-divider
                                         a.dropdown-item(href='#') Something else here
-                                li.nav-item.dropdown
+                                li.nav-item.dropdown.col.mr-4
                                     a#navbarDropdown.nav-link.dropdown-toggle(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false') Для детей
                                     .dropdown-menu(aria-labelledby='navbarDropdown')
                                         a.dropdown-item(href='#') Action
                                         a.dropdown-item(href='#') Another action
                                         .dropdown-divider
                                         a.dropdown-item(href='#') Something else here
-                                a.navbar-brand.pr-5(href='#') 
+                                a.navbar-brand.col-4(href='#') 
                                     img(src="img/logo.png", alt="logotype")
 
-                                li.nav-item
+                                li.nav-item.col
                                     a.nav-link(href='#') Оплата
-                                li.nav-item.mr-3
+                                li.nav-item.col
                                     a.nav-link(href='#') Доставка
-                                .basket.ml-5
-                                    li.nav-item.mr-1
+                                .basket.d-flex.justify-content-between.col
+                                    li.nav-item
                                         a.nav-link(href='#') 
                                             img(src="img/basketLogo.svg", alt="basket")
                                     li.nav-item.mt-2
@@ -60,41 +60,42 @@ html
                             li(data-target='#carouselExampleIndicators' data-slide-to='2')
                         .carousel-inner
                             .carousel-item.active.d-flex
-                                .slideText
+                                .slideText.col
                                     h3.slideName.mb-3 Зимняя распродажа
                                     h1.slideTitle.mb-5 СКИДКИ ДО 90%
                                     a.slideButton.py-3 СМОТРЕТЬ МОДЕЛИ
-                                .slideImg
+                                .slideImg.col
                                     h4.noCost.text-right 9 900 ₽
                                     h2.cost.text-right 1 900 ₽
-                                    img(src="img/shoes.png", alt="sale") 
+                                    img.w-100(src="img/shoes.png", alt="sale")
                             .carousel-item.d-flex
-                                .slideText
+                                .slideText.col
                                     h3.slideName.mb-3 Зимняя распродажа
                                     h1.slideTitle.mb-5 СКИДКИ ДО 90%
                                     a.slideButton.py-3 СМОТРЕТЬ МОДЕЛИ
-                                .slideImg
+                                .slideImg.col
                                     h4.noCost.text-right 9 900 ₽
                                     h2.cost.text-right 1 900 ₽
-                                    img(src="img/shoes.png", alt="sale")
+                                    img.w-100(src="img/shoes.png", alt="sale") 
                             .carousel-item.d-flex
-                                .slideText
+                                .slideText.col
                                     h3.slideName.mb-3 Зимняя распродажа
                                     h1.slideTitle.mb-5 СКИДКИ ДО 90%
                                     a.slideButton.py-3 СМОТРЕТЬ МОДЕЛИ
-                                .slideImg
+                                .slideImg.col
                                     h4.noCost.text-right 9 900 ₽
                                     h2.cost.text-right 1 900 ₽
-                                    img(src="img/shoes.png", alt="sale")
+                                    img.w-100(src="img/shoes.png", alt="sale") 
                             .carousel-item.d-flex
-                                .slideText
+                                .slideText.col
                                     h3.slideName.mb-3 Зимняя распродажа
                                     h1.slideTitle.mb-5 СКИДКИ ДО 90%
                                     a.slideButton.py-3 СМОТРЕТЬ МОДЕЛИ
-                                .slideImg
+                                .slideImg.col
                                     h4.noCost.text-right 9 900 ₽
                                     h2.cost.text-right 1 900 ₽
-                                    img(src="img/shoes.png", alt="sale")
+                                    img.w-100(src="img/shoes.png", alt="sale") 
+                            
         
         section.delivery   
             h2.titleSection БЕСПЛАТНАЯ ДОСТАВКА 
@@ -106,32 +107,32 @@ html
         section.models
             .container
                 h2.title-section.text-center.text-uppercase.font-weight-bold Новые модели
-                .wrapper-mod.d-flex.justify-content-between.flex-wrap
-                    .card-wrapper.my-bord
+                .wrapper-mod.d-flex
+                    .card-wrapper.mr-3
                         .card.py-3
                             img.card-img-top(src='img/models.png' alt='models')
                             .card-body
-                                p.card-text.text-center.font-weight-bold.mx-auto.mb-15.col-9 Коктейльное платье
+                                p.card-text.text-center.font-weight-bold.mx-auto.mb-15.col-10 Коктейльное платье
                                 p.card-text.text-center.text-warning.font-weight-bold.color ₽ 40 000
-                    .card-wrapper.my-bord
+                    .card-wrapper.mr-3
                         .card.py-3
                             img.card-img-top(src='img/models.png' alt='models')
                             .card-body
-                                p.card-text.text-center.font-weight-bold.col-9.mx-auto.mb-15 Коктейльное платье
+                                p.card-text.text-center.font-weight-bold.col-10.mx-auto.mb-15 Коктейльное платье
                                 p.card-text.text-center.text-warning.font-weight-bold.color ₽ 40 000
-                    .card-wrapper.my-bord
+                    .card-wrapper.mr-3
                         .card.py-3
                             img.card-img-top(src='img/models.png' alt='models')
                             .card-body
-                                p.card-text.text-center.font-weight-bold.col-9.mx-auto.mb-15 Коктейльное платье
+                                p.card-text.text-center.font-weight-bold.col-10.mx-auto.mb-15 Коктейльное платье
                                 p.card-text.text-center.text-warning.font-weight-bold.color ₽ 40 000
-                    .card-wrapper.my-bord
+                    .card-wrapper.mr-3
                         .card.py-3
                             img.card-img-top(src='img/models.png' alt='models')
                             .card-body
-                                p.card-text.text-center.font-weight-bold.col-9.mx-auto.mb-15 Коктейльное платье
+                                p.card-text.text-center.font-weight-bold.col-10.mx-auto.mb-15 Коктейльное платье
                                 p.card-text.text-center.color.font-weight-bold ₽ 40 000
-                a.my-btn.btn.btn-primary.col-3.py-3.mx-auto.d-block(href='#' role='button') ВСЕ МОДЕЛИ &rarr;
+                a.my-btn.btn.btn-primary.col-sm-6.col-md-5.col-lg-6.py-3.mx-auto.d-block(href='#' role='button') ВСЕ МОДЕЛИ &rarr;
 
 
 
