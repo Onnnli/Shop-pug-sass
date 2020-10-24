@@ -101,6 +101,22 @@
     line-height: 26px;
     color: #FFFFFF; }
 
+.models {
+  background-color: #fff;
+  padding: 150px 0; }
+  .models .container .title-section {
+    font-size: 36px;
+    margin-bottom: 103px; }
+  .models .container .wrapper-mod .my-bord {
+    border: 3px solid #D7B399; }
+    .models .container .wrapper-mod .my-bord .card .card-body .color {
+      color: #D7B399 !important; }
+  .models .container .btn-primary {
+    background-color: #D7B399 !important;
+    color: #ffffff;
+    border: none !important;
+    margin-top: 121px; }
+
 * {
   box-sizing: border-box;
   margin: 0;

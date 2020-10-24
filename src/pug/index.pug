@@ -36,7 +36,7 @@ html
                                         a.dropdown-item(href='#') Another action
                                         .dropdown-divider
                                         a.dropdown-item(href='#') Something else here
-                                a.navbar-brand(href='#') 
+                                a.navbar-brand.pr-5(href='#') 
                                     img(src="img/logo.png", alt="logotype")
 
                                 li.nav-item
@@ -50,33 +50,7 @@ html
                                     li.nav-item.mt-2
                                         a.nav-link(href='#')
                                             img(src="img/item.svg", alt="itembasket")
-                                    
-                            
-                        
 
-
-                //- nav.navContent
-                //-     ul.navList
-                //-         li
-                //-             a.navLink(href="#") Для мужчин
-                //-         li
-                //-             a.navLink(href="#") Для женщин
-                //-         li
-                //-             a.navLink(href="#") Для детей
-                //-         li
-                //-             a.navLogo(href="#")
-                //-                 img(src="img/logo.png", alt="logoty[pe")    
-                //-         li
-                //-             a.navDelivery(href="#") Оплата
-                //-         li
-                //-             a.navPay(href="#") Доставка
-                //-     .basket
-                //-         .basketLogo
-                //-             img(src="img/basketLogo.svg", alt="basket")
-                //-         .basketItem
-                //-             img(src="img/item.svg", alt="itembasket")
-                
-                
                 .sliderWrapper.justify-content-center
                     #carouselExampleIndicators.carousel.slide(data-ride='carousel')
                         ol.carousel-indicators.indicator
@@ -89,7 +63,7 @@ html
                                 .slideText
                                     h3.slideName.mb-3 Зимняя распродажа
                                     h1.slideTitle.mb-5 СКИДКИ ДО 90%
-                                    a.slideButton.py-4 СМОТРЕТЬ МОДЕЛИ
+                                    a.slideButton.py-3 СМОТРЕТЬ МОДЕЛИ
                                 .slideImg
                                     h4.noCost.text-right 9 900 ₽
                                     h2.cost.text-right 1 900 ₽
@@ -98,7 +72,7 @@ html
                                 .slideText
                                     h3.slideName.mb-3 Зимняя распродажа
                                     h1.slideTitle.mb-5 СКИДКИ ДО 90%
-                                    a.slideButton.py-4 СМОТРЕТЬ МОДЕЛИ
+                                    a.slideButton.py-3 СМОТРЕТЬ МОДЕЛИ
                                 .slideImg
                                     h4.noCost.text-right 9 900 ₽
                                     h2.cost.text-right 1 900 ₽
@@ -107,7 +81,7 @@ html
                                 .slideText
                                     h3.slideName.mb-3 Зимняя распродажа
                                     h1.slideTitle.mb-5 СКИДКИ ДО 90%
-                                    a.slideButton.py-4 СМОТРЕТЬ МОДЕЛИ
+                                    a.slideButton.py-3 СМОТРЕТЬ МОДЕЛИ
                                 .slideImg
                                     h4.noCost.text-right 9 900 ₽
                                     h2.cost.text-right 1 900 ₽
@@ -116,34 +90,48 @@ html
                                 .slideText
                                     h3.slideName.mb-3 Зимняя распродажа
                                     h1.slideTitle.mb-5 СКИДКИ ДО 90%
-                                    a.slideButton.py-4 СМОТРЕТЬ МОДЕЛИ
+                                    a.slideButton.py-3 СМОТРЕТЬ МОДЕЛИ
                                 .slideImg
                                     h4.noCost.text-right 9 900 ₽
                                     h2.cost.text-right 1 900 ₽
                                     img(src="img/shoes.png", alt="sale")
-                       
-
-                    //- .slider
-                    //-     .slide.slideOne
-                    //-         .slideContent
-                    //-             .slideText
-                    //-                 h3.slideName Зимняя распродажа
-                    //-                 h1.slideTitle СКИДКИ ДО 90%
-                    //-                 a.slideButton СМОТРЕТЬ МОДЕЛИ
-                    //-             .slideImg
-                    //-                 h4.noCost 9 900 ₽
-                    //-                 h2.cost 1 900 ₽ 
-                    //- .paginationWrapper
-                    //-     a.pagination
-                    //-     a.pagination.active
-                    //-     a.pagination
-                    //-     a.pagination
         
         section.delivery   
             h2.titleSection БЕСПЛАТНАЯ ДОСТАВКА 
                 span ОТ 3000₽
             p.discribeSection Сделайте заказ и получите подарок!
 
+        //section.clothes
+
+        section.models
+            .container
+                h2.title-section.text-center.text-uppercase.font-weight-bold Новые модели
+                .wrapper-mod.d-flex.justify-content-between.flex-wrap
+                    .card-wrapper.my-bord
+                        .card.py-3
+                            img.card-img-top(src='img/models.png' alt='models')
+                            .card-body
+                                p.card-text.text-center.font-weight-bold.mx-auto.mb-15.col-9 Коктейльное платье
+                                p.card-text.text-center.text-warning.font-weight-bold.color ₽ 40 000
+                    .card-wrapper.my-bord
+                        .card.py-3
+                            img.card-img-top(src='img/models.png' alt='models')
+                            .card-body
+                                p.card-text.text-center.font-weight-bold.col-9.mx-auto.mb-15 Коктейльное платье
+                                p.card-text.text-center.text-warning.font-weight-bold.color ₽ 40 000
+                    .card-wrapper.my-bord
+                        .card.py-3
+                            img.card-img-top(src='img/models.png' alt='models')
+                            .card-body
+                                p.card-text.text-center.font-weight-bold.col-9.mx-auto.mb-15 Коктейльное платье
+                                p.card-text.text-center.text-warning.font-weight-bold.color ₽ 40 000
+                    .card-wrapper.my-bord
+                        .card.py-3
+                            img.card-img-top(src='img/models.png' alt='models')
+                            .card-body
+                                p.card-text.text-center.font-weight-bold.col-9.mx-auto.mb-15 Коктейльное платье
+                                p.card-text.text-center.color.font-weight-bold ₽ 40 000
+                a.my-btn.btn.btn-primary.col-3.py-3.mx-auto.d-block(href='#' role='button') ВСЕ МОДЕЛИ &rarr;
 
 
 
