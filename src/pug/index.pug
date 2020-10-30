@@ -10,91 +10,102 @@ html
         header.head
             .container
                 .navWrapper
-                   nav.navbar.navbar-expand-lg.navbar-light.bg-light.bgc
-                        button.navbar-toggler.bgc(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+                   nav.navbar.navbar-expand-lg.navbar-light.p-0
+                        button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
                             span.navbar-toggler-icon
                         #navbarSupportedContent.collapse.navbar-collapse
-                            ul.navbar-nav.bgc.d-flex.align-items-center
-                                li.nav-item.dropdown.col.mr-4
+                            ul.navbar-nav.justify-content-between
+                                li.nav-item.dropdown.col
                                     a#navbarDropdown.nav-link.dropdown-toggle(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false') Для мужчин
                                     .dropdown-menu(aria-labelledby='navbarDropdown')
-                                        a.dropdown-item(href='#') Action
-                                        a.dropdown-item(href='#') Another action
-                                        .dropdown-divider
-                                        a.dropdown-item(href='#') Something else here
-                                li.nav-item.dropdown.col.mr-4
+                                        a.dropdown-item(href='#') Верхняя одежда
+                                        a.dropdown-item(href='#') Свитер
+                                        a.dropdown-item(href='#') Верхняя одежда
+                                        a.dropdown-item(href='#') Свитер
+                                        a.dropdown-item(href='#') Верхняя одежда
+                                        a.dropdown-item(href='#') Свитер
+                                li.nav-item.dropdown.col.mx-lg-5
                                     a#navbarDropdown.nav-link.dropdown-toggle(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false') Для женщин
                                     .dropdown-menu(aria-labelledby='navbarDropdown')
-                                        a.dropdown-item(href='#') Action
-                                        a.dropdown-item(href='#') Another action
-                                        .dropdown-divider
-                                        a.dropdown-item(href='#') Something else here
-                                li.nav-item.dropdown.col.mr-4
+                                        a.dropdown-item(href='#') Верхняя одежда
+                                        a.dropdown-item(href='#') Свитер
+                                        a.dropdown-item(href='#') Верхняя одежда
+                                        a.dropdown-item(href='#') Свитер
+                                        a.dropdown-item(href='#') Верхняя одежда
+                                        a.dropdown-item(href='#') Свитер
+                                li.nav-item.dropdown.col
                                     a#navbarDropdown.nav-link.dropdown-toggle(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false') Для детей
                                     .dropdown-menu(aria-labelledby='navbarDropdown')
-                                        a.dropdown-item(href='#') Action
-                                        a.dropdown-item(href='#') Another action
-                                        .dropdown-divider
-                                        a.dropdown-item(href='#') Something else here
-                                a.navbar-brand.col-4(href='#') 
+                                        a.dropdown-item(href='#') Верхняя одежда
+                                        a.dropdown-item(href='#') Свитер
+                                        a.dropdown-item(href='#') Верхняя одежда
+                                        a.dropdown-item(href='#') Свитер
+                                        a.dropdown-item(href='#') Верхняя одежда
+                                        a.dropdown-item(href='#') Свитер
+                                        
+                                a.navbar-brand.col.col-lg-3(href='#') 
                                     img(src="img/logo.png", alt="logotype")
-
-                                li.nav-item.col
+                                
+                                li.nav-item.cash.col
                                     a.nav-link(href='#') Оплата
                                 li.nav-item.col
                                     a.nav-link(href='#') Доставка
-                                .basket.d-flex.justify-content-between.col
-                                    li.nav-item
-                                        a.nav-link(href='#') 
-                                            img(src="img/basketLogo.svg", alt="basket")
-                                    li.nav-item.mt-2
-                                        a.nav-link(href='#')
-                                            img(src="img/item.svg", alt="itembasket")
+                                li.nav-item.col.col-lg-2
+                                    a.nav-link.d-flex.justify-content-end(href='#') 
+                                        img(src="img/basket.png", alt="basket")
+                                
 
-                .sliderWrapper.justify-content-center
+                .sliderWrapper
                     #carouselExampleIndicators.carousel.slide(data-ride='carousel')
                         ol.carousel-indicators.indicator
                             li.active(data-target='#carouselExampleIndicators' data-slide-to='0')
                             li(data-target='#carouselExampleIndicators' data-slide-to='1')
                             li(data-target='#carouselExampleIndicators' data-slide-to='2')
-                            li(data-target='#carouselExampleIndicators' data-slide-to='2')
+                            li(data-target='#carouselExampleIndicators' data-slide-to='3')
                         .carousel-inner
-                            .carousel-item.active.d-flex
-                                .slideText.col
-                                    h3.slideName.mb-3 Зимняя распродажа
-                                    h1.slideTitle.mb-5 СКИДКИ ДО 90%
-                                    a.slideButton.py-3 СМОТРЕТЬ МОДЕЛИ
-                                .slideImg.col
-                                    h4.noCost.text-right 9 900 ₽
-                                    h2.cost.text-right 1 900 ₽
-                                    img.w-100(src="img/shoes.png", alt="sale")
-                            .carousel-item.d-flex
-                                .slideText.col
-                                    h3.slideName.mb-3 Зимняя распродажа
-                                    h1.slideTitle.mb-5 СКИДКИ ДО 90%
-                                    a.slideButton.py-3 СМОТРЕТЬ МОДЕЛИ
-                                .slideImg.col
-                                    h4.noCost.text-right 9 900 ₽
-                                    h2.cost.text-right 1 900 ₽
-                                    img.w-100(src="img/shoes.png", alt="sale") 
-                            .carousel-item.d-flex
-                                .slideText.col
-                                    h3.slideName.mb-3 Зимняя распродажа
-                                    h1.slideTitle.mb-5 СКИДКИ ДО 90%
-                                    a.slideButton.py-3 СМОТРЕТЬ МОДЕЛИ
-                                .slideImg.col
-                                    h4.noCost.text-right 9 900 ₽
-                                    h2.cost.text-right 1 900 ₽
-                                    img.w-100(src="img/shoes.png", alt="sale") 
-                            .carousel-item.d-flex
-                                .slideText.col
-                                    h3.slideName.mb-3 Зимняя распродажа
-                                    h1.slideTitle.mb-5 СКИДКИ ДО 90%
-                                    a.slideButton.py-3 СМОТРЕТЬ МОДЕЛИ
-                                .slideImg.col
-                                    h4.noCost.text-right 9 900 ₽
-                                    h2.cost.text-right 1 900 ₽
-                                    img.w-100(src="img/shoes.png", alt="sale") 
+                            .carousel-item.active
+                                .content-slide
+                                    .slideText.col-md-7.p-0
+                                        h3.slideName.mb-3 Зимняя распродажа
+                                        h1.slideTitle.mb-5 СКИДКИ ДО 90%
+                                        a.slideButton.py-3 СМОТРЕТЬ МОДЕЛИ
+                                    .slideImg.col-md-5.p-0
+                                        h4.noCost.text-right 9 900 ₽
+                                        h2.cost.text-right 1 900 ₽
+                                        img.w-100(src="img/shoes.png", alt="sale")
+                            .carousel-item
+                                .content-slide
+                                    .slideText.col-md-7.p-0
+                                        h3.slideName.mb-3 Зимняя распродажа
+                                        h1.slideTitle.mb-5 СКИДКИ ДО 90%
+                                        a.slideButton.py-3 СМОТРЕТЬ МОДЕЛИ
+                                    .slideImg.col-md-5.p-0
+                                        h4.noCost.text-right 7 900 ₽
+                                        h2.cost.text-right  900 ₽
+                                        img.w-100(src="img/dress.png", alt="sale")
+                            .carousel-item
+                                .content-slide
+                                    .slideText.col-md-7.p-0
+                                        h3.slideName.mb-3 Зимняя распродажа
+                                        h1.slideTitle.mb-5 СКИДКИ ДО 90%
+                                        a.slideButton.py-3 СМОТРЕТЬ МОДЕЛИ
+                
+                                    .slideImg.col-md-5.p-0
+                                        h4.noCost.text-right 5 900 ₽
+                                        h2.cost.text-right 1 999 ₽
+                                        img.w-100(src="img/shoes.png", alt="sale")
+                            .carousel-item
+                                .content-slide
+                                    .slideText.col-md-7.p-0
+                                        h3.slideName.mb-3 Зимняя распродажа
+                                        h1.slideTitle.mb-5 СКИДКИ ДО 90%
+                                        a.slideButton.py-3 СМОТРЕТЬ МОДЕЛИ
+                
+                                    .slideImg.col-md-5.p-0
+                                        h4.noCost.text-right 10 900 ₽
+                                        h2.cost.text-right 2 900 ₽
+                                        img.w-100(src="img/shoes.png", alt="sale")
+            
                             
         
         section.delivery   
@@ -102,37 +113,73 @@ html
                 span ОТ 3000₽
             p.discribeSection Сделайте заказ и получите подарок!
 
-        //section.clothes
+        section.clothes
+            .wrap-cloth
+                .cloth.man
+                    .text-cloth
+                        h3.title-section МУЖСКАЯ
+                            span  КОЛЛЕКЦИЯ
+                        p.sub-title Обувь, полуверы, костюмы
+                        a.btn-cloth &#8594;
+                .cloth.woman
+                    .text-cloth
+                        h3.title-section ЖЕНСКАЯ  
+                            span КОЛЛЕКЦИЯ
+                        p.sub-title Обувь, полуверы, костюмы
+                        a.btn-cloth &#8594;
+            .container
+                .catalog-wrap
+                    .item
+                        h5.name-item платья
+                    .item
+                        h5.name-item туфли
+                    .item
+                        h5.name-item платья
+                    .item
+                        h5.name-item туфли
+                    .item
+                        h5.name-item платья
+                    .item
+                        h5.name-item туфли
+                    .item
+                        h5.name-item платья
+                    .item
+                        h5.name-item туфли
+
+
+
 
         section.models
             .container
                 h2.title-section.text-center.text-uppercase.font-weight-bold Новые модели
-                .wrapper-mod.d-flex
-                    .card-wrapper.mr-3
-                        .card.py-3
+                .wrapper-mod
+                    .card-wrapper.col-4.col-md-6.col-lg-3
+                        .card
                             img.card-img-top(src='img/models.png' alt='models')
                             .card-body
-                                p.card-text.text-center.font-weight-bold.mx-auto.mb-15.col-10 Коктейльное платье
-                                p.card-text.text-center.text-warning.font-weight-bold.color ₽ 40 000
-                    .card-wrapper.mr-3
-                        .card.py-3
+                                p.card-text Коктейльное платье
+                                p.card-text.color ₽ 40 000
+                    .card-wrapper.col-4.col-md-6.col-lg-3
+                        .card
                             img.card-img-top(src='img/models.png' alt='models')
                             .card-body
-                                p.card-text.text-center.font-weight-bold.col-10.mx-auto.mb-15 Коктейльное платье
-                                p.card-text.text-center.text-warning.font-weight-bold.color ₽ 40 000
-                    .card-wrapper.mr-3
-                        .card.py-3
+                                p.card-text Коктейльное платье
+                                p.card-text.color ₽ 40 000
+                    .w-100
+                    .card-wrapper.col-4.col-md-6.col-lg-3
+                        .card
                             img.card-img-top(src='img/models.png' alt='models')
                             .card-body
-                                p.card-text.text-center.font-weight-bold.col-10.mx-auto.mb-15 Коктейльное платье
-                                p.card-text.text-center.text-warning.font-weight-bold.color ₽ 40 000
-                    .card-wrapper.mr-3
-                        .card.py-3
+                                p.card-text Коктейльное платье
+                                p.card-text.color ₽ 40 000
+                    .card-wrapper.col-4.col-md-6.col-lg-3
+                        .card
                             img.card-img-top(src='img/models.png' alt='models')
                             .card-body
-                                p.card-text.text-center.font-weight-bold.col-10.mx-auto.mb-15 Коктейльное платье
-                                p.card-text.text-center.color.font-weight-bold ₽ 40 000
-                a.my-btn.btn.btn-primary.col-sm-6.col-md-5.col-lg-6.py-3.mx-auto.d-block(href='#' role='button') ВСЕ МОДЕЛИ &rarr;
+                                p.card-text Коктейльное платье
+                                p.card-text.color ₽ 40 000
+
+                a.my-btn.btn.btn-primary.col-12.col-sm-8.col-md-4.col-lg-3.py-3.mx-auto.d-block(href='#' role='button') ВСЕ МОДЕЛИ &rarr;
 
 
 

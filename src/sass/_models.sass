@@ -3,36 +3,53 @@ $color: #D7B399;
 .models
     background-color: #fff
     padding: 150px 0
-    .container
-        .title-section
-            font-size: 36px
-            margin-bottom: 103px
-        .wrapper-mod
-            .card-wrapper
-                border: 3px solid $color
-                .card
-                    border: none!important
-                    cursor: pointer
-                    .card-body
-                        .color
-                            color: $color!important
-        .btn-primary
-            background-color: $color!important
-            color: #ffffff
-            border: none!important
-            margin-top: 121px
+    .title-section
+        font-size: 36px
+        margin-bottom: 103px
+
+.wrapper-mod
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-around
+    .w-100  
+        display: none
+    .card-wrapper
+        max-width: 255px //не помню для чего 
+        
+        .card
+            padding: 25px 0
+            border: 3px solid $color
+            border-radius: 0
+            cursor: pointer
+            .card-body
+                text-align: center
+                .card-text
+                    font-weight: 600
+                    font-size: 14px
+                    line-height: 17px
+                    text-align: center
+                    color: #000000
+                    &.color
+                        color: $color
+
+    
+.btn-primary
+    background-color: $color!important
+    color: #ffffff
+    border: none!important
+    margin-top: 121px
 
 
 @media screen and ( max-width: 992px) 
-    section.models
-            .container
-                .wrapper-mod
-                   display: flex
-                   flex-wrap: wrap!important
-                   justify-content: center
-                   .card-wrapper
-                        margin-bottom: 10px!important
-                        a 
-                            width: 300px
-
-                    
+    .wrapper-mod
+        .w-100
+            display: block
+            margin: 5px 0
+    
+@media screen and ( max-width: 768px) 
+    .wrapper-mod
+        .card-wrapper
+            padding: 0
+@media screen and ( max-width: 576px)
+    .btn
+        margin-top: 55px
