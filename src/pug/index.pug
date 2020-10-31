@@ -2,7 +2,7 @@ html
     head
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title The loop
+        title The Loop
         link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css' integrity='sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk' crossorigin='anonymous')
         link(href='https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap' rel='stylesheet')
         link(rel="stylesheet", href="./css/main.css")
@@ -42,10 +42,8 @@ html
                                         a.dropdown-item(href='#') Свитер
                                         a.dropdown-item(href='#') Верхняя одежда
                                         a.dropdown-item(href='#') Свитер
-                                        
                                 a.navbar-brand.col.col-lg-3(href='#') 
                                     img(src="img/logo.png", alt="logotype")
-                                
                                 li.nav-item.cash.col
                                     a.nav-link(href='#') Оплата
                                 li.nav-item.col
@@ -53,8 +51,6 @@ html
                                 li.nav-item.col.col-lg-2
                                     a.nav-link.d-flex.justify-content-end(href='#') 
                                         img(src="img/basket.png", alt="basket")
-                                
-
                 .sliderWrapper
                     #carouselExampleIndicators.carousel.slide(data-ride='carousel')
                         ol.carousel-indicators.indicator
@@ -89,7 +85,6 @@ html
                                         h3.slideName.mb-3 Зимняя распродажа
                                         h1.slideTitle.mb-5 СКИДКИ ДО 90%
                                         a.slideButton.py-3 СМОТРЕТЬ МОДЕЛИ
-                
                                     .slideImg.col-md-5.p-0
                                         h4.noCost.text-right 5 900 ₽
                                         h2.cost.text-right 1 999 ₽
@@ -100,19 +95,14 @@ html
                                         h3.slideName.mb-3 Зимняя распродажа
                                         h1.slideTitle.mb-5 СКИДКИ ДО 90%
                                         a.slideButton.py-3 СМОТРЕТЬ МОДЕЛИ
-                
                                     .slideImg.col-md-5.p-0
                                         h4.noCost.text-right 10 900 ₽
                                         h2.cost.text-right 2 900 ₽
                                         img.w-100(src="img/shoes.png", alt="sale")
-            
-                            
-        
         section.delivery   
             h2.titleSection БЕСПЛАТНАЯ ДОСТАВКА 
                 span ОТ 3000₽
             p.discribeSection Сделайте заказ и получите подарок!
-
         section.clothes
             .wrap-cloth
                 .cloth.man
@@ -145,86 +135,79 @@ html
                         h5.name-item платья
                     .item
                         h5.name-item туфли
-
-
-
-
         section.models
             .container
                 h2.title-section.text-center.text-uppercase.font-weight-bold Новые модели
                 .wrapper-mod
-                    .card-wrapper.col-4.col-md-6.col-lg-3
-                        .card
-                            img.card-img-top(src='img/models.png' alt='models')
-                            .card-body
-                                p.card-text Коктейльное платье
-                                p.card-text.color ₽ 40 000
-                    .card-wrapper.col-4.col-md-6.col-lg-3
+                    .card-wrapper.col-12.col-sm-5.col-md-6.col-lg-3
                         .card
                             img.card-img-top(src='img/models.png' alt='models')
                             .card-body
                                 p.card-text Коктейльное платье
                                 p.card-text.color ₽ 40 000
                     .w-100
-                    .card-wrapper.col-4.col-md-6.col-lg-3
+                    .card-wrapper.col-12.col-sm-5.col-md-6.col-lg-3
                         .card
                             img.card-img-top(src='img/models.png' alt='models')
                             .card-body
                                 p.card-text Коктейльное платье
                                 p.card-text.color ₽ 40 000
-                    .card-wrapper.col-4.col-md-6.col-lg-3
+                    .w-100
+                    .card-wrapper.col-12.col-sm-5.col-md-6.col-lg-3
                         .card
                             img.card-img-top(src='img/models.png' alt='models')
                             .card-body
                                 p.card-text Коктейльное платье
                                 p.card-text.color ₽ 40 000
-
+                    .w-100
+                    .card-wrapper.col-12.col-sm-5.col-md-6.col-lg-3
+                        .card
+                            img.card-img-top(src='img/models.png' alt='models')
+                            .card-body
+                                p.card-text Коктейльное платье
+                                p.card-text.color ₽ 40 000
                 a.my-btn.btn.btn-primary.col-12.col-sm-8.col-md-4.col-lg-3.py-3.mx-auto.d-block(href='#' role='button') ВСЕ МОДЕЛИ &rarr;
-
-
         section.sale
             .container
                 .wrap-sale
                     h2.titleSection ПОЛУЧАЙТЕ СКИДКИ И ПОДАРКИ
-                   
                     .input-group.col-12.mx-auto.col-md-5.ml-5.p-0.justify-content-between.align-items-center
                         input.form-control.col-12.col-sm-8.mx-auto.col-md-6.mb-0(type='email' placeholder="Ваш e-mail" aria-label="Ваш e-mail" aria-describedby='button-addon2')
                         .w-100
                         .input-group-append.offset-3.mx-auto
                             button#button-addon2.btn.col-12(type='button') ПОДПИСАТЬСЯ
-
         section.new-item
             .container
                 h2.title-section.text-center.text-uppercase.font-weight-bold СКИДКИ ДО 90%
                 .wrapper-mod
-                    .card-wrapper.col-4.col-md-6.col-lg-3
-                        .card
-                            img.card-img-top(src='img/models.png' alt='models')
-                            .card-body
-                                p.card-text Коктейльное платье
-                                p.card-text.color ₽ 40 000
-                    .card-wrapper.col-4.col-md-6.col-lg-3
+                    .card-wrapper.col-12.col-sm-5.col-md-6.col-lg-3
                         .card
                             img.card-img-top(src='img/models.png' alt='models')
                             .card-body
                                 p.card-text Коктейльное платье
                                 p.card-text.color ₽ 40 000
                     .w-100
-                    .card-wrapper.col-4.col-md-6.col-lg-3
+                    .card-wrapper.col-12.col-sm-5.col-md-6.col-lg-3
                         .card
                             img.card-img-top(src='img/models.png' alt='models')
                             .card-body
                                 p.card-text Коктейльное платье
                                 p.card-text.color ₽ 40 000
-                    .card-wrapper.col-4.col-md-6.col-lg-3
+                    .w-100
+                    .card-wrapper.col-12.col-sm-5.col-md-6.col-lg-3
                         .card
                             img.card-img-top(src='img/models.png' alt='models')
                             .card-body
                                 p.card-text Коктейльное платье
                                 p.card-text.color ₽ 40 000
-
+                    .w-100
+                    .card-wrapper.col-12.col-sm-5.col-md-6.col-lg-3
+                        .card
+                            img.card-img-top(src='img/models.png' alt='models')
+                            .card-body
+                                p.card-text Коктейльное платье
+                                p.card-text.color ₽ 40 000
                 a.my-btn.btn.btn-primary.col-12.col-sm-8.col-md-4.col-lg-3.py-3.mx-auto.d-block(href='#' role='button') ВСЕ МОДЕЛИ &rarr;
-
         footer.footer
             .container
                 .content-footer
