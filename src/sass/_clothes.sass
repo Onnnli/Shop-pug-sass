@@ -59,7 +59,9 @@ a.btn-cloth
 
 
 .item
+    cursor: pointer
     background: url(../img/dress.png), #F4F4F4
+    background-size: contain
     background-repeat: no-repeat
     background-position: right 0 bottom 0
     &:nth-child(2n)
@@ -67,12 +69,78 @@ a.btn-cloth
         background-repeat: no-repeat
         background-size: contain
         background-position: right 0 bottom 0
+    &:hover
+        transition: all .2s ease
+        transform: scale(1.1)
+        box-shadow: 0 0 10px rgba(0,0,0,0.5)
 
-        
     .name-item
         font-weight: 300
         font-size: 21px
         line-height: 26px
         letter-spacing: 0.03em
         color: #000000
-        
+        text-transform: uppercase
+        margin-top: 100%
+        margin-left: 30px
+
+@media screen   and (max-width: 1140px)
+    .cloth
+        &.man
+            background-position: right 0 bottom 0 
+            .text-cloth
+                max-width: 367px
+                margin: 0 120px 0 auto
+                padding-left: 10px
+
+        &.woman
+            background-position: left 300px bottom 0  
+            .text-cloth
+                max-width: 367px
+                margin: 0 auto 0 35px
+
+@media screen   and (max-width: 960px)
+     .cloth
+        &.man
+            background-position: right 0 bottom 0 
+            .text-cloth
+                margin: 0 0 0 auto
+
+        &.woman
+            background-position: left 200px bottom 0  
+            .text-cloth
+                max-width: 367px
+                margin: 0 auto 0 35px
+
+
+
+@media screen   and (max-width: 768px)
+    .wrap-cloth
+        grid-template-columns: 1fr
+        grid-template-rows: 1fr 1fr
+    .cloth
+        &.man
+            background-position: right 0 bottom 0 
+            .text-cloth
+                margin: 0 auto
+
+        &.woman
+            background-position: right 0 bottom 0  
+            .text-cloth
+                max-width: 367px
+                margin: 0 auto
+    .catalog-wrap
+        grid-template-columns: repeat(3, 1fr)
+        grid-auto-rows: minmax(236px, auto)
+        .item:nth-child(8)
+            display: none
+        .item:nth-child(7)
+            display: none
+
+@media screen   and (max-width: 576px)
+    .catalog-wrap
+        grid-template-columns: repeat(2, 1fr)
+        grid-auto-rows: minmax(236px, auto)
+        .item
+            .name-item
+                margin-top: 25px

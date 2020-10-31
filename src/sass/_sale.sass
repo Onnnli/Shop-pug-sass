@@ -1,0 +1,58 @@
+section.sale
+    background-color: #212121
+    padding: 71px 0
+    .titleSection
+        font-weight: bold
+        font-size: 30px
+        line-height: 37px
+        letter-spacing: 0.02em
+        color: #ffffff
+        text-transform: uppercase
+
+.wrap-sale
+    display: flex  
+    align-items: center
+    max-width: 1140px 
+    width: 100%
+
+.input-group
+    .w-100 
+        display: none
+    input.form-control
+        border-radius: 0
+        outline: none
+        font-weight: 300
+        font-size: 16px
+        line-height: 15px
+        letter-spacing: 0.02em
+        color: #8D8D8D
+        background-clip: inherit    
+    .input-group-append
+        button#button-addon2.btn  
+            padding: 12px
+            background-color: #D7B399
+            border-radius: 0
+            border: none
+            font-weight: 500
+            font-size: 14px
+            line-height: 17px
+            text-align: center
+            color: #FFFFFF
+
+@media screen and ( max-width: 992px )
+    section.sale
+        .titleSection
+            font-size: 28px
+
+@media screen and ( max-width: 768px )
+    section.sale
+        .titleSection
+            font-size: 25px
+            margin-bottom: 25px
+    .wrap-sale
+        flex-direction: column
+    .w-100
+        display: block
+    .input-group
+        input.form-control
+            margin-bottom: 20px

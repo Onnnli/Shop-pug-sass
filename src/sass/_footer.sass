@@ -1,0 +1,81 @@
+footer.footer
+    background-color: #212121
+    padding-top: 73px 
+
+.content-footer
+    display: flex  
+    align-items: center
+    padding-bottom: 80px
+    .w-100
+        display: none
+.logo   
+    margin-bottom: 30px
+
+.disc-logo
+    font-size: 14px
+    line-height: 22px
+    color: #FFFFFF
+
+//.items-footer
+    //display: flex
+
+.list-group
+    padding: 0
+    h4.title-item
+        font-weight: bold
+        font-size: 10px
+        line-height: 12px
+        display: flex
+        align-items: center
+        text-transform: uppercase
+        color: #FFFFFF
+    a.list-group-item
+        background-color: transparent
+        border: none
+        color: #CBCFD4
+        font-size: 13px
+        line-height: 22px
+        padding: 5px 0
+        &.active
+            color: #ffffff
+        &:hover
+            transform: scale(1.1)
+            transition: 500ms ease  
+        i
+            color: #D7B399
+.copyright
+    background-color: #fff
+    padding: 22px 0 45px 0
+    
+.copy 
+    font-size: 14px
+    line-height: 22px
+    color: #212121
+    margin: 0
+
+.policy
+    text-decoration: none
+    font-size: 14px
+    line-height: 22px
+    color: #212121
+    text-align: right
+
+@media screen and ( max-width: 992px )
+    .logo-text
+        text-align: center
+        p.disc-logo
+            max-width: 500px
+            margin: 0 auto
+            margin-bottom: 20px
+        img
+            margin: 0 auto
+            display: block  
+    .content-footer
+        flex-direction: column
+        // .w-100  
+        //     display: block
+@media screen and ( max-width: 768px )
+    .content-footer
+        flex-direction: column
+        .w-100  
+            display: block
